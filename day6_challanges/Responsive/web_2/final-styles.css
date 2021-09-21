@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+
+    font-family: "Josefin Slab" ;
+}
+
+
+img {
+    max-width: 100%;
+}
+#app {
+    padding: 1.25em;
+    margin: 0 auto;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: none; /*hide ul by default*/
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+.food-list {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.food-list > * {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1000px) {
+    header {
+        justify-content: flex-end;
+    }
+
+   
+    header .fas, header #mail {
+        display: none;
+    }
+
+    header ul {
+        display: block;
+    }
+    #food-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .food-list {
+        width: calc(100%/4);
+        padding: 10px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+    #app {
+        max-width: 1400px;
+    }
+}
